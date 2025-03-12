@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Name') {
+            steps {
+                echo 'Naina there..'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'build in progress'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'TESTING...'
+            }
+        }
+
+    }
+}
