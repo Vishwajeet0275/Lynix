@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello Wd'
+            }
+        }
+         stage('Test') {
+            steps {
+                echo 'HelWorld'
+            }
+        }
+         stage('Deploy') {
+            steps {
+                echo 'Heddbnjnd'
+            }
+        }
+    }
+}
