@@ -2,21 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Hello') {
             steps {
-                echo 'Hello Wd'
-            }
-        }
-         stage('Test') {
-            steps {
-                echo 'HelWorld'
-bat'javac Helloworld.java'
-            }
-        }
-         stage('Deploy') {
-            steps {
-                echo 'Heddbnjnd'
-bat'java Helloworld.java'
+               publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: '', reportFiles: 'lynix.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
             }
         }
     }
